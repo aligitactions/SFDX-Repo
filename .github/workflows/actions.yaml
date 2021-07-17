@@ -31,7 +31,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Validate to the org
         run: |
-          sfdx force:source:deploy -c -p $(git diff --name-only $(git describe --abbrev=0 --tags) | tr '\n' ',') -u ${{ secrets.SFDC_USERNAME }} -w 10
+          sfdx force:source:deploy -c -p $(git diff --name-only $(git describe --abbrev=0 --tags) | tr '\n' ',') -u sf.test6789@gmail.com -w 10
        # sfdx sgd:source:delta --from $(git describe --match "poc-*" --abbrev=0 --tags HEAD) --to HEAD --output . --ignore .forceignore
         #  echo "--- package.xml generated with added and modified metadata from $(git describe --match "poc-*" --abbrev=0 --tags HEAD)---"
          # cat package/package.xml
