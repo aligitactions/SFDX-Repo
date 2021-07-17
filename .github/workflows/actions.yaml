@@ -3,7 +3,7 @@ name: dx workflow
 
 on:
   push:
-    branches: [ POC ]
+    branches: [ poc ]
     # Only trigger a workflow when changes have been made to files in the below mentioned path.
     # paths:
     #   - "poc/**"
